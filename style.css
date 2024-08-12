@@ -1,0 +1,1048 @@
+ ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ 		.st0{fill:#076435;}
+		.st1{fill:#FBFBFB;}
+		.st2{fill:#F4F4F4;}
+		.st3{fill:none;}
+		.st4{fill:#231815;}
+		.st5{fill:#A11F24;}
+		.st6{fill:#2069B2;}
+
+
+
+    .background1 {
+		position: fixed;
+        top: -80px;
+        left: 80vw;
+        width: 65%; 
+        height: 120%;
+        z-index: 2; 
+        overflow: hidden; 
+    }
+    .backgroundintroduction {
+        position: fixed;
+        top: -150px;
+        left: 75vw;
+        transform: scale(0.8);
+        z-index: 2; 
+        overflow: hidden; 
+    }
+    .backgroundpractical {
+        position: fixed;
+        top: 80vh;
+        left: -25vw;
+        transform: scale(0.85);
+        z-index: 2; 
+        overflow: hidden; 
+    }
+
+
+
+
+
+
+header,seection,footer{
+	background-color:white;
+}
+
+header{
+	background-color:white;
+	padding:15px 0;
+	border:0;
+	position: fixed;
+	 z-index: 1; 
+}
+
+    header ul {
+	    list-style-type: none; 
+        display: flex; 
+        align-items: center; 
+	    border:none
+    }
+
+    header ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+        header ul li a {
+            text-decoration: none; 
+            color: #222222; 
+            font-family: 'Crete Round', sans-serif; 
+            font-size: 16px; 
+	        background-color:white;
+            padding: 15px 6vw; 
+	        border:none;
+            background-position-x: color 0.3s ease; 
+        }
+
+        #introduction .introduction a,
+        #how-to-play .how-to-play a,
+        #practical-tools .practical-tools a {
+        background-color: #076436;  
+        color:white;
+        }
+
+
+        header ul li.logo a {
+            color: transparent;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 55%;
+        }
+
+        #home .logo a {
+            background-image: url("elements/logo w.svg");
+	        background-color: #076436; 
+        }
+
+        #introduction .logo a,
+        #how-to-play .logo a,
+        #practical-tools .logo a {
+            background-image: url("elements/logo.svg");
+	        background-color: white;
+        }
+
+        header ul li a:hover {
+            color: white; 
+        	background-color:  #076436; 
+        }
+        
+        #home .logo a:hover {
+            background-image: url("elements/logo w.svg");
+	        background-color:  #222222;
+        }
+
+        #introduction .introduction a:hover,
+        #how-to-play .how-to-play a:hover,
+        #practical-tools .practical-tools a:hover {
+            color: white;
+            background-color: #222222;
+        }
+
+        #introduction .logo a:hover,
+        #how-to-play .logo a:hover,
+        #practical-tools .logo a:hover {
+            background-image: url("elements/logo w.svg");
+	        background-color:  #076436
+        }
+
+        header ul li.logo a:hover {
+           color: transparent;
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: 55%;
+        }
+
+        #home .logo a :hover{
+            background-image: url("elements/logo w.svg");
+	        background-color: #222222; 
+        }
+
+        #introduction .logo a:hover,
+        #how-to-play .logo a:hover,
+        #practical-tools .logo a:hover{
+            background-image: url("elements/logo w.svg");
+        }
+
+		#twocharactergame {
+        width: 100%;
+    	height: 100%;
+   		position: relative;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+        }
+
+
+
+body {
+    min-height: 100vh;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 8vw; 
+	padding-top: 80px;
+	padding-bottom: 80px
+}
+
+#practical-tools main {
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    overflow: hidden; 
+}
+
+    .welcome{
+	    position: absolute;
+	    margin-top: 80vh;
+		margin-left: 2vw;
+    }
+
+    .introductionall{
+	    position: absolute;
+		top:20vh;
+		margin-left: 2vw;
+    }
+
+
+    .course-directory {
+    display: flex;
+    padding: 50px 0;
+    position: relative;
+	overflow: hidden;
+	margin-left: 2vw;
+	}
+    .timeline {
+    position: absolute;
+    left: 31%;
+	transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #2222222e;
+	top: 5vh;
+}
+    .units {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+	align-items: center; 
+}
+    .unit {
+    width: 100%;
+    display: flex;
+	flex-direction: column;
+    align-items: flex-start; 
+    margin-bottom: 100px;
+    }
+    .unit-title {
+	white-space: nowrap;
+    text-align: right;
+    font-family: 'Crete Round', serif;
+    color: #076435;
+	margin-top: 20px;
+	align-items: flex-end;
+	width: 30%; 
+	padding-right: 5vw;
+}
+
+    .lesson {
+    display: flex;
+    align-items: center;
+	width: 100%;
+    margin-bottom: 0px;
+	margin-left: 36%;
+}
+    .list{
+        color:#076435;
+    }
+	
+    .lesson-name{
+		white-space: nowrap;
+		justify-content: center;
+		margin-top: 35px;
+    }
+    .lesson-title{
+	    display: flex;
+		align-items: center;
+		margin: 0;
+		gap:40px;
+		margin-left: 20px;
+    }
+    .timeline-line {
+        width: 15px; 
+        height: 5px; 
+        background-color: #A11F24;
+        position: absolute;
+        left: 31%;
+        transform: translateX(-50%);
+        z-index: 3; 
+		margin-bottom: 20px;
+    }
+
+
+	
+    .gifs-with-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 40px; /* Add space between each GIF-text pair */
+    margin-top: 20px;
+	margin-bottom: 100px;
+	}
+    .gif-text-pair {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px; /* Space between the GIF and the text */
+    width: 100%;
+    }
+    .gif-text-pair .gif {
+    flex: 1;
+    width: 50vw;
+    }
+    .gif-text-pair img {
+    width: 50vw;
+    height: auto;
+    border-radius: 8px; /* Optional: add some rounding to the corners */
+    }
+    .gif-text-pair p {
+    flex: 2;
+    font-family: 'Roboto', sans-serif;
+    color: #222222;
+    font-size: 18px;
+    line-height: 1.5;
+    }
+    .gif-description{
+	width: 25vw;
+	margin-left: 80px;
+    }
+    .gif-bottom{
+     width: 60vw; /* 减小宽度 */
+    max-width: 800px; /* 添加最大宽度限制 */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    }
+	.footerbutton{
+    position: fixed;
+    right: 8vw; 
+    bottom: 20px; 
+    z-index: 10000; 
+	}
+
+
+    .testname{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 40px;
+    margin-left: 20px;
+    }
+    .testname .backbotton {
+        position: relative;
+        top:4px;
+    }
+    .testname .quizetext,
+    .testname .quizerule {
+    margin: 0; 
+    line-height: 1;
+    }
+	.testtext{
+	display: flex;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0; 
+    margin-top: 10px;
+	margin-left: 0px;
+	display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    gap: 30px; 
+	}
+
+
+	.quizetext{
+	margin-left: 0px;
+	color: #222222;
+	}
+	.quizerule{
+	margin-left: 20px;
+	color: #076436;
+	}
+	.quize1-1{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 6vh;
+	max-height: 70vh;
+    width: 80vw;
+	overflow: hidden;
+	margin-bottom: 25px;
+    margin-top: 90px;
+	}
+
+
+	.submitbottom{
+		display: flex;
+   		justify-content: flex-end;
+    	margin-right: 12vw;
+		margin-top: 4vh;
+		align-items:baseline;
+		justify-content: flex-end; 
+		align-items: flex-end;
+	}
+    
+    .downward{
+        margin-top: 10px;
+        width: 100%;    
+	}
+
+	 .layer {
+        transition: transform 0.3s ease;
+        transform-origin: center center;
+    }
+    .layer:hover {
+        transform: scale(1.05);
+    }
+	.layer {
+    transition: transform 0.3s ease;
+	}
+	.hidden {
+    display: none !important;
+	}
+	
+
+
+
+
+	.result-message {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    font-family: 'Crete Round', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    border-radius: 0px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    width: 100vw;
+    text-align: center;
+    position: fixed; /* 固定位置 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 调整位置 */
+    z-index: 9998; /* 确保在所有内容的最上层 */
+	}
+    .result-message.success {
+    background-color: #076436;
+    color: white;
+	}
+	.result-message.failed {
+    background-color: #A11F24;
+    color: white;
+	}
+	.quizbutton {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)translateY(3vh);
+    z-index: 9999;
+    text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+	}
+    .quizbutton button {
+    margin: 0 10px;
+	}
+	.invisible {
+    opacity: 0 !important;
+	}
+
+	.draggable {
+            cursor: move;
+        }
+    .droppable {
+            pointer-events: all;
+        }
+	.draggable.placed {
+    cursor: default;
+    pointer-events: none;
+    z-index: 10; /* 确保放置的元素在灰色方块上层 */
+	cursor: default;
+    pointer-events: none;
+	}
+	.placed {
+    pointer-events: none;
+	}
+	.quize3-1{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	max-height: 60vh;
+    width: 65vw;
+	overflow: hidden;
+	margin-left: 9vw;
+	margin-top: 4vh;
+	margin-bottom: 10px;
+	}
+	.quize3-1 svg {
+    	width: 100%;
+    	height: 100%;
+    	max-height: 50vh; 
+    	object-fit: contain;
+		margin:48px 0 0 0;
+		}
+    
+
+
+
+
+
+    main h2 {
+        font-family: 'Crete Round', serif;
+        color: #222222;
+        font-size: 42px;
+    }
+    main h1 {
+        font-family: 'Crete Round', serif;
+        color: #222222;
+        font-size: 90px;
+        margin-bottom: 40px; 
+    }
+    main h3 {
+        font-family: 'Crete Round', serif;
+        color: #222222;
+        font-size: 50px;
+        margin-bottom: 46px; 
+    }
+    main h4 {
+        font-family: 'Crete Round', serif;
+        color: #222222;
+        font-size: 28px;
+        margin-bottom: 36px; 
+    }
+	 main h5 {
+        font-family: 'Crete Round', serif;
+        color: #222222;
+        font-size: 48px;
+        margin-bottom: 36px; 
+    }
+
+
+  main p {
+	    color:#222222;
+	    font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		line-height: 1.3;
+		margin-bottom: 0.8em; 
+		text-decoration: none;
+    }
+
+    .font-type1{
+        top:8px;
+        font-size: 14px; 
+        max-width: 55vw;  
+    }
+         .font-type1:last-child {
+            margin-bottom: 0;
+         }
+
+     .font-type2{
+        top:8px;
+        font-size: 16px; 
+        max-width: 55vw;  
+     }
+            .font-type2:last-child {
+                margin-bottom: 0;
+            }
+
+    
+    
+
+    .video-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    }
+
+
+
+	video {
+    order: 1;
+    width: 70vw; 
+	margin: 0;
+    height: auto;
+	margin: 0;
+    }
+
+    .video-container .next {
+    margin-left: 100px;
+	margin-bottom: 0;
+	white-space: nowrap;
+    }
+
+
+    .threepic {
+        transform: scale(1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 0 10vw;
+		margin-top:15vh;
+     }
+       .threepic a {
+           display: block;
+           text-decoration: none;
+           overflow: hidden;
+		   padding:0; 
+		   margin: 0 70px;
+		   box-sizing: border-box;
+		   overflow: visible; 
+       }
+        .threepic img {
+            width: 20vw;
+			margin: 0 auto;
+        }
+        .threepic a:hover img{
+            transform: scale(1.1);
+			transition: transform 0.3s ease;
+        }
+
+
+
+    .start a {
+        color: inherit;
+        text-decoration: none;
+    }
+      .start {
+        align-items: center;
+        appearance: none;
+        background-color: #A11F24;
+        border-radius: 50px;
+        border: none;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: inline-flex;
+        fill: currentcolor;
+        font-family: 'Crete Round', sans-serif; 
+        font-weight: 400;
+        font-size: 24px;
+        height: 50px;
+        justify-content: center;
+        letter-spacing: .25px;
+        line-height: normal;
+        max-width: 100%;
+        overflow: visible;
+        padding: 2px 24px;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 170px;
+        will-change: transform,opacity;
+        z-index: 0;
+        margin-top: 45px;
+    }
+      .start:hover {
+        background: white;
+        border: 6px #A11F24 solid;
+        color: #222222;
+    }
+      .start:active {
+        outline: none;
+    }
+      .start:focus {
+        outline: none;
+        border: none;
+        background: #076436
+    }
+    
+	.next a {
+        color: inherit;
+        text-decoration: none;
+    }
+      .next {
+        align-items: center;
+        appearance: none;
+        background-color: #A11F24;
+        border-radius: 50px;
+        border: none;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: inline-flex;
+        fill: currentcolor;
+        font-family: 'Crete Round', sans-serif; 
+        font-weight: 400;
+        font-size: 24px;
+        height: 50px;
+        justify-content: center;
+        letter-spacing: .25px;
+        line-height: normal;
+        max-width: 100%;
+        overflow: visible;
+        padding: 2px 24px;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 170px;
+        will-change: transform,opacity;
+        z-index: 0;
+        margin-top: 35px;
+		margin-bottom: 30px;
+    }
+      .next:hover {
+        background: white;
+        border: 6px #A11F24 solid;
+        color: #222222;
+    }
+      .next:active {
+        outline: none;
+    }
+      .next:focus {
+        outline: none;
+        border: none;
+        background: #076436
+    }
+
+	.submit a {
+        color: inherit;
+        text-decoration: none;
+    }
+      .submit {
+        align-items: center;
+        appearance: none;
+        background-color: #A11F24;
+        border-radius: 50px;
+        border: none;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: inline-flex;
+        fill: currentcolor;
+        font-family: 'Crete Round', sans-serif; 
+        font-weight: 400;
+        font-size: 24px;
+        height: 50px;
+        justify-content: center;
+        letter-spacing: .25px;
+        line-height: normal;
+        max-width: 100%;
+        overflow: visible;
+        padding: 2px 24px;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 170px;
+        will-change: transform,opacity;
+        z-index: 0;
+        margin-top: 10px;
+    }
+      .submit:hover {
+        background: white;
+        border: 6px #A11F24 solid;
+        color: #222222;
+    }
+      .submit:active {
+        outline: none;
+    }
+      .submit:focus {
+        outline: none;
+        border: none;
+        background: #076436
+    }
+    .reset a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .reset{
+        align-items: center;
+        appearance: none;
+        background-color: #076435;
+        border-radius: 50px;
+        border: none;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        display: inline-flex;
+        fill: currentcolor;
+        font-family: 'Crete Round', sans-serif; 
+        font-weight: 400;
+        font-size: 24px;
+        height: 50px;
+        justify-content: center;
+        letter-spacing: .25px;
+        line-height: normal;
+        max-width: 100%;
+        overflow: visible;
+        padding: 2px 24px;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 170px;
+        will-change: transform,opacity;
+        z-index: 0;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+    .reset:hover {
+        background: white;
+        border: 6px #076435 solid;
+        color: #222222;
+    }
+    .reset:active {
+        outline: none;
+    }
+    .reset:focus {
+        outline: none;
+        border: none;
+        background: #076436
+    }
+
+
+	.gamebottom a {
+        color: inherit;
+        text-decoration: none;
+    }
+      .gamebottom {
+        align-items: center;
+		top: 0;
+   		left: 0;
+   		right: 0;
+    	bottom: 0;
+        appearance: none;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+        border: none;
+        box-sizing: border-box;
+        color: #222222;
+        cursor: pointer;
+        display: inline-flex;
+        fill: currentcolor;
+        font-family: 'Crete Round', sans-serif; 
+        font-weight: 400;
+        font-size: 24px;
+        height: 60px;
+        justify-content: center;
+        letter-spacing: .25px;
+        line-height: normal;
+        max-width: 100%;
+        overflow: visible;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 250px;
+        will-change: transform,opacity;
+        z-index: 0;
+        }
+      .gamebottom:hover {
+        background: #EEEEEE;
+        border: 6px #FFFFFF solid;
+        color: #222222;
+    }
+      .gamebottom:active {
+        outline: none;
+    }
+      .gamebottom:focus {
+        outline: none;
+        border: none;
+        background: #DDDDDD;
+    }
+    
+
+    
+
+
+    .skip{
+	 background: none;
+    border: none;
+    color: #222222;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0px 8px;
+    }
+
+
+
+
+
+
+    .lesson-button {
+    display: flex;
+	align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+    text-decoration: none;
+    color: #272727;
+	font-family: 'Crete Round', sans-serif; 
+    font-weight: 400;
+    margin-right: 0;
+	margin-bottom: 20px; 
+    width: 400px; 
+    height: 78px; 
+}
+      .lesson-button img {
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+}
+      .lesson-button span {
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 10px;
+}
+      .lesson-button:hover {
+          transform: scale(1.05);
+		  background: #F2F2F2;
+}
+
+
+   .quiz-button {
+	align-items: center;
+        appearance: none;
+        border-radius: 50px;
+        border: none;
+        box-sizing: border-box;
+	    background: white;
+        border: 5px #076435 solid;
+        color: #222222;
+        cursor: pointer;
+        display: inline-flex;
+        fill: currentcolor;
+        font-family: 'Crete Round', sans-serif; 
+        font-weight: 400;
+        font-size: 28px;
+        height: 50px;
+        justify-content: center;
+        letter-spacing: .25px;
+        line-height: normal;
+        max-width: 100%;
+        overflow: visible;
+        padding: 2px 24px;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        width: 150px;
+        will-change: transform,opacity;
+        z-index: 0;
+		margin-bottom: 15px;
+	    margin-left: 80px;
+	    text-decoration: none; 
+        }
+      .quiz-button:hover {
+        background-color: #A11F24;
+        border: 0px;
+        color: white;
+    }
+    @media (max-width: 768px) {
+    .unit {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+		
+		
+		
+		
+		
+		
+}
+
+
+	.go-back {
+	  color: #222222;
+	  line-height: 2; /* 增加行高 */
+	  padding-left: 25px; /* 增加左内边距，为更大的箭头留出空间 */
+	  position: relative;
+	  border: none; /* 移除边框 */
+	  background: none; /* 移除背景 */
+	  cursor: pointer; /* 添加鼠标指针样式 */
+	  display: flex;
+      align-items: center;
+	  margin-bottom: 5px;
+	}
+	.go-back::before,
+	.go-back::after {
+	  content: "";
+	  display: block;
+	  left: 0px;
+	  position: absolute;
+	  top: 50%;
+	  transition: left 0.1s;
+	}
+	.go-back::before {
+	  border-color: #076435;
+	  border-style: solid;
+	  border-width: 0 0 6px 6px; /* 增加边框宽度 */
+	  height: 20px; /* 增加高度 */
+	  width: 20px; /* 增加宽度 */
+	  margin-top: -10px; /* 调整垂直位置 */
+	  transform: rotate(45deg);
+	  -webkit-transform: rotate(45deg);
+	}
+	.go-back::after {
+	  background: #076435;
+	  height: 6px; /* 增加高度 */
+	  width: 36px; /* 增加宽度 */
+	}
+	.go-back:hover::before,
+	.go-back:hover::after {
+	  left: -5px; /* 增加悬停时的移动距离 */
+	}
+	.go-back:focus {
+	  outline: none;
+	}
+
+
+
+
+
+
+
+
+
+
+
